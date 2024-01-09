@@ -18,11 +18,15 @@ const calculate = () => {
   result = [
     `<p> Addition:  ${addition(num1, num2)} </p>
     <p> Subtraction:  ${subtraction(num1, num2)} </p>
-    <p> Subtraction:  ${multiplication(num1, num2)} </p>
-    <p> Subtraction:  ${divition(num1, num2)} </p>`,
+    <p> Multiplication:  ${multiplication(num1, num2)} </p>
+    <p> Divition:  ${divition(num1, num2)} </p>`,
   ];
 
   // const result1 = addition(num1, num2);
   // console.log(result1);
   document.getElementById("result").innerHTML = result;
+};
+
+const reset = () => {
+  window.location = "index.html";
 };
